@@ -15,7 +15,6 @@ const style = {
   width: 400,
   maxWidth: "80%",
   maxHeight: "80%",
-  bgcolor: "background.paper",
   boxShadow: 24,
   p: 4,
   display: "flex",

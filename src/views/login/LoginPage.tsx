@@ -6,9 +6,9 @@ import { RoleType, setRole } from "../../store/slices/userSlice";
 const LoginPage = () => {
   const navigate = useNavigate();
   const dispatch = useDispatch();
-  const handleLogin = async (role: RoleType) => {
-    await dispatch(setRole(role));
-    await navigate("/loby");
+  const handleLogin = (role: RoleType) => {
+    dispatch(setRole(role));
+    navigate("/loby");
   };
 
   return (
