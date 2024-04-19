@@ -1,3 +1,3 @@
 export const appConfig = {
-  baseUrl: "http://localhost:3000",
+  baseUrl: "https://codeblocks-api.roymalka.dev",
 };
