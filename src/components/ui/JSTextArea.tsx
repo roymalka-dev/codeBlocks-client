@@ -23,7 +23,7 @@ export const JSTextArea: React.FC<JSTextAreaProps> = ({
   //handle the change of the text area
   const handleChange = (event: React.ChangeEvent<HTMLTextAreaElement>) => {
     setCode(event.target.value);
-    typeHandler && typeHandler(code);
+    typeHandler && typeHandler(event.target.value);
   };
 
   const highlightedCode = hljs.highlightAuto(code, ["javascript"]).value;
